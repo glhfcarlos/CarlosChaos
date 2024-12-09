@@ -47,7 +47,7 @@ torus2.name = 'torus2';
 scene.add(torus2);
 
 // Carlos
-const carlosTexture = new THREE.TextureLoader().load('me.jpeg');
+const carlosTexture = new THREE.TextureLoader().load('/CarlosChaos/me.jpeg');
 const carlos = new THREE.Mesh(
   new THREE.BoxGeometry(3, 3, 3),
   new THREE.MeshBasicMaterial({ map: carlosTexture })
@@ -56,8 +56,8 @@ carlos.name = 'carlos';
 scene.add(carlos);
 
 // Moon
-const moonTexture = new THREE.TextureLoader().load('space.jpg');
-const normalTexture = new THREE.TextureLoader().load('texture.jpg');
+const moonTexture = new THREE.TextureLoader().load('/CarlosChaos/space.jpg');
+const normalTexture = new THREE.TextureLoader().load('/CarlosChaos/texture.jpg');
 const moon = new THREE.Mesh(
   new THREE.SphereGeometry(3, 32, 32),
   new THREE.MeshStandardMaterial({
