@@ -46,5 +46,15 @@
     </audio>
 
     <script type="module" src="/src/main.js"></script>
+
+    <script>
+      window.addEventListener('load', () => {
+        const music = document.getElementById('backgroundMusic');
+        if (music.paused) {
+          music.play();
+        }
+      });
+    </script>
+
   </body>
 </html>
